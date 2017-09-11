@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- indicates file type. does not have a closing tag, and not self closing -->
+
+<html lang="en">
+<!-- language attribute: tells what language the page uses -->
+
+	<head>
+		<!-- title tag is required. the title shows up in the browswer toolbar/tab, 
+		search engine results, and bookmarks -->
+		<title>My First HTML Page</title>
+		<!-- charset attribute specifies character encoding for the html document, 
+		failure to do this may result in wonky font rendering -->
+		<meta charset="UTF-8"/>
+		<!-- Some optional meta tags, they help with SEO -->
+		<meta name="description" content="A sample description for the search engines"/>
+		<meta name="keywords" content="HTML,CSS,tutorial"/>
+		<meta name="author" content="your name or company name"/>
+		<!-- this is now where we would link to external/internal script files,
+		or links to css docs -->
+	</head>
+
+	<body>
+
+	<p id="top">This is a page with some basic HTML elements. We will update as the tutorial 
+	progresses.</p>
+	<hr> 
+	<!-- you can grab it and link to it, so you can jump around on the same page -->
+
+	<!-- Header Tags h1-h6 and h1 is the most important heading and there should
+	only be one per page -->
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph. <strong>But this sentence is bold because it is more important
+	content wise and is wrapped in a strong tag.</strong></p>
+	<p>This is yet another paragraph. <em>This time we wrapped these words in an em tag to 
+	emphasize.</em></p>
+
+	<p>This is another paragraph <br /> with <br />line breaks.</p>
+	<!-- line break is a self closing tag -->
+
+	<p>This paragraph has some <small>small text</small> in it.</p>
+	
+	<!-- ordered list -->
+	<p>This is an ordered list</p>
+	<ol>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+
+	<!-- ordered list -->
+	<p>This is an ordered list</p>
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+
+	<p>Here is a sample image tag. This is a self closing tag and it has a source attribute.</p>
+
+	<!-- Paragraphs are block size elements. Images are inline elements, so the next paragraph shows 
+	up right after it. -->
+	
+	<!-- Use alt for alternative text descriptions and title for image titles for accessible web -->
+
+	<img src="https://media.mnn.com/assets/images/2016/07/goats-wattles.jpg.838x0_q80.jpg" 
+	alt="White goat pic from google image results. Hard coded URL." title="White Goat">
+	
+	<img src="img/goat.jpeg" alt="Another goat with local URL. We use /foldernames/file.names just like 
+	in terminal" title="Another Goat"> 
+
+	<br>
+	
+	<hr>
+	<!-- hr is also a block element -->
+	<!-- Anchor Tags -->
+	<a href="https://www.google.com/" target="_blank">This anchor tag will open a link to google in a new window.</a>
+	<!-- By defult is opens in the same tab. -->
+	<a href="#top">This link will jump to the paragraph on the top of the page with the ID of top.
+	This is a named anchor.</a>
+
+	<a href="img/goat.jpeg">This will link to another file inside our site or server.</a>
+
+	<br><br>
+	</body>
+
+</html>
