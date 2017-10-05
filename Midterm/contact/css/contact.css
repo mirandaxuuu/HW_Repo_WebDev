@@ -30,7 +30,7 @@ ul.menu li {
 	font-size: 18px;
 }
 
-li a {
+ul.menu li a {
 	display: block;
 	text-align: center;
 	width: 100px;
@@ -45,22 +45,16 @@ nav a:hover {
     color: black; 
 }
 
-/***************
+
+/********************
 BODY
-***************/
-
-p.welcome {
-	text-align: center;
-	font-size: 30px;
-	padding: 20px;
-}
-
+********************/
 body {
 	width: 70%;
 	margin: 0 auto;
 	font-family: 'Muli', sans-serif;
 	color: rgb(50, 50, 50);
-	background: url(../img/playstation-pattern.png);
+	background: url(../../img/playstation-pattern.png);
 }
 
 main {
@@ -68,21 +62,39 @@ main {
 	margin-bottom: 10px;
 	padding: 20px;
 	background-color: white;
-	min-height: 700px;
+	min-height: 400px;
 }
 
 article p, footer, h1{
 	padding: 0px 15px 0px 15px;
 }
 
-article img {
-	margin: 1%;
-	padding-top: 20px;
-}
-
 article {
 	padding: 5px;
 	font-size: 18px;
+}
+
+/*********************
+LIST
+*********************/
+
+ul.contact {
+	list-style-type: none;
+	padding: 20px;
+}
+
+ul.contact a {
+/*	text-decoration: none;*/
+	color: rgb(50, 50, 50);
+	transition: all 500ms ease;
+}
+
+ul.contact li {
+	margin-bottom: 15px;
+}
+
+ul.contact a:hover {
+	font-size: 20px;
 }
 
 

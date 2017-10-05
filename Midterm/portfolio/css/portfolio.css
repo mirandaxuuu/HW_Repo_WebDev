@@ -3,6 +3,10 @@ h1 {
 	color: rgb(50, 50, 50);
 }
 
+footer, h1{
+	padding: 0px 15px 0px 15px;
+}
+
 h1 a {
 	text-decoration: none;
 	color: rgb(50, 50, 50);
@@ -49,18 +53,12 @@ nav a:hover {
 BODY
 ***************/
 
-p.welcome {
-	text-align: center;
-	font-size: 30px;
-	padding: 20px;
-}
-
 body {
 	width: 70%;
 	margin: 0 auto;
 	font-family: 'Muli', sans-serif;
 	color: rgb(50, 50, 50);
-	background: url(../img/playstation-pattern.png);
+	background: url(../../img/playstation-pattern.png);
 }
 
 main {
@@ -71,19 +69,46 @@ main {
 	min-height: 700px;
 }
 
-article p, footer, h1{
-	padding: 0px 15px 0px 15px;
-}
-
-article img {
+div.container img {
+	width: 96%
 	margin: 1%;
-	padding-top: 20px;
+/*	padding-top: 20px;*/
 }
 
-article {
+div.container {
 	padding: 5px;
 	font-size: 18px;
 }
+
+.polaroid {
+    position: relative;
+    margin: 10px;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(10,10,10,0.5);
+    -moz-box-shadow: 2px 2px 2px 2px rgba(10,10,10,0.5);
+    box-shadow: 2px 2px 2px 2px rgba(10,10,10,0.5);
+}
+
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    top: 34%;
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    color: rgba(255,255,255,0);
+    display: block;
+    transition: all 300ms ease;
+}
+
+.polaroid p:hover {
+	color: rgb(255,255,255);
+}
+
 
 
 /*********************
