@@ -1,0 +1,154 @@
+h1 {
+	display: inline-block;
+	color: rgb(50, 50, 50);
+	margin-left: 10px;
+}
+
+footer, h1{
+	padding: 0px 15px 0px 15px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: rgb(50, 50, 50);
+}
+
+/****************
+NAVIGATION
+****************/
+
+nav.menu {
+    float: right;
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+nav.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav.menu ul li {
+	display: inline-block;
+	font-size: 18px;
+}
+
+nav.menu ul li a {
+	display: block;
+	text-align: center;
+	width: 100px;
+	padding: 10px;
+	text-decoration: none;
+	color: rgb(50, 50, 50);
+	transition: all 800ms ease;
+}
+
+nav.menu a:hover {
+    background-color: lightgray; 
+    color: black; 
+}
+
+/*********************
+BODY
+*********************/
+
+body {
+	width: 70%;
+	margin: 0 auto;
+	font-family: 'Muli', sans-serif;
+	color: rgb(50, 50, 50);
+	background: url(../../img/playstation-pattern.png);
+}
+
+main {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	background-color: white;
+	min-height: 700px;
+	position: relative;
+}
+
+/***********************
+SIDEBAR
+***********************/
+
+div.sidebar {
+	background: url(../img/concrete-texture.png);
+	height: 300px;
+	width: 200px;
+	position: fixed;
+	left: 20%;
+	top: 240px;
+	display: inline-block;
+	float: left;
+	border: 2px dotted rgba(100,100,100,0.5);
+
+}
+
+div.sidebar ul {
+	list-style-type: none;
+	margin: 3%;
+	padding: 0;
+	padding-top: 50px;
+	padding-left: 10px;
+}
+
+div.sidebar ul li {
+	font-size: 18px;
+}
+
+div.sidebar ul li a {
+	display: block;
+	width: 100px;
+	padding: 10px;
+	text-decoration: none;
+	color: rgb(50, 50, 50);
+	transition: all 200ms ease;
+}
+
+div.sidebar nav a:hover {
+    margin-left: 5px;
+}
+
+/**********************
+IMAGES
+**********************/
+
+.container{
+    width:80%;
+    margin:0 auto;
+    padding-left: 100px;
+    padding-top: 20px;
+    margin-left: 18%;
+}
+
+.polaroid {
+    width: 300px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.polaroid img {
+    width:100%;
+    height:auto;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+}
+
+
+/*********************
+FOOTER
+*********************/
+
+footer {
+	float: right;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+}
