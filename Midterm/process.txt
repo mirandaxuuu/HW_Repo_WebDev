@@ -1,0 +1,15 @@
+portfolio.css
+line 113
+Q: Is there a way to make the margin-top half the height of the image?
+line 110
+Q: How can I set the width and height of h2 to be the same as the image? So I can click on the entire image.
+
+music.html
+Q: Is there a way to import the thumbnail of the YouTube video without a playing button on it?
+
+photography.html
+Q: Why is my website working so slow...
+
+contact.css
+line 87
+Q: Better with the underline?
