@@ -1,6 +1,11 @@
 h1 {
 	display: inline-block;
 	color: rgb(50, 50, 50);
+	margin-left: 10px;
+}
+
+footer, h1{
+	padding: 0px 15px 0px 15px;
 }
 
 h1 a {
@@ -30,7 +35,7 @@ ul.menu li {
 	font-size: 18px;
 }
 
-ul.menu li a {
+li a {
 	display: block;
 	text-align: center;
 	width: 100px;
@@ -45,10 +50,10 @@ nav a:hover {
     color: black; 
 }
 
-
-/********************
+/*********************
 BODY
-********************/
+*********************/
+
 body {
 	width: 70%;
 	margin: 0 auto;
@@ -62,54 +67,52 @@ main {
 	margin-bottom: 10px;
 	padding: 20px;
 	background-color: white;
-	min-height: 400px;
+	min-height: 700px;
 }
 
-article p, footer, h1{
-	padding: 0px 15px 0px 15px;
+/*************************
+CONTAINER
+*************************/
+.container {
+	margin: 0 auto;
 }
 
-article {
-	padding: 5px;
-	font-size: 18px;
+.polaroid {
+	position: relative;
+	width: 45%;
+	display: inline-block;
+	margin: 20px;
 }
 
-/*********************
-LIST
-*********************/
-
-ul.contact {
-	list-style-type: none;
-	padding: 20px;
-	margin-left: 20px;
+.polaroid img {
+	width: 100%;
+	height: auto;
+	border: 10px solid rgb(200,200,200);
+	border-bottom:45px solid rgb(200,200,200);
 }
 
-ul.contact a {
-	text-decoration: none;
-	color: rgb(50, 50, 50);
-/*	transition: all 500ms ease;*/
+.polaroid p {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	color: black;
+	bottom: 0px;
+	font-size: 16px;
 }
-
-ul.contact li {
-	margin-bottom: 20px;
-}
-
-/*ul.contact a:hover {
-	margin-left: 5px;
-}*/
-
 
 /*********************
 FOOTER
 *********************/
 
 footer {
+	display: block;
 	float: right;
 }
 
 .clear {
 	clear: both;
 	height: 0;
+	display: block;
 }
 
 /*******************
@@ -137,6 +140,10 @@ MEDIA QUERIES
 	
 	ul.menu li {
 		font-size: 12px;
+	}
+	
+	.polaroid {
+		width: 80%;
 	}
 
 }

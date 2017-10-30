@@ -78,9 +78,10 @@ SIDEBAR
 div.sidebar {
 	background: url(../img/concrete-texture.png);
 	height: 300px;
-	width: 200px;
+	width: 10%;
+	min-width: 130px;
 	position: fixed;
-	left: 20%;
+	left: 18%;
 	top: 240px;
 	display: inline-block;
 	float: left;
@@ -120,7 +121,7 @@ IMAGES
 .container{
     width:80%;
     margin:0 auto;
-    padding-left: 100px;
+    padding-left: 4%;
     padding-top: 20px;
     margin-left: 18%;
 }
@@ -151,4 +152,48 @@ footer {
 .clear {
 	clear: both;
 	height: 0;
+}
+
+/*******************
+MEDIA QUERIES
+*******************/
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	body {
+		width: 80%;
+	}
+
+	main {
+		padding: 10px;
+	}
+
+	div.sidebar {
+		visibility: hidden;
+	}
+
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+	body {
+		width: 85%;
+	}
+	
+	ul.menu li {
+		font-size: 12px;
+	}
+
+	div.sidebar {
+		visibility: hidden;
+	}
+
+	.container {
+		margin-left: 0;
+	}
+
+	.polaroid {
+		width: 200px;
+	}
+
 }

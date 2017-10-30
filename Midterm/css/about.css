@@ -98,3 +98,39 @@ footer {
 	clear: both;
 	height: 0;
 }
+
+/*******************
+MEDIA QUERIES
+*******************/
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	body {
+		width: 80%;
+	}
+
+	main {
+		padding: 10px;
+	}
+
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+	body {
+		width: 85%;
+	}
+	
+	ul.menu li {
+		font-size: 12px;
+	}
+
+	p.welcome {
+		font-size: 22px;
+		padding: 10px;
+	}
+
+	article {
+		font-size: 16px;
+	}
+}
