@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="quoteMe">Quote 1</p>
+<script type="text/javascript">
+//global variables are defined outside of functions and can be reused across our code
+	var quoteToggle = true;
+	var myQuote; 
+	document.addEventListener('DOMContentLoaded', function () {
+		// grab all of our DOM elements we need to change after the page is loaded
+		myQuote= document.getElementById('quoteMe');
+		// console.log(myQuote);
+		// setInterval to change our boolean true false every 2 seconds
+		setInterval(myFunction, 2000);
+
+				
+	});
+	
+	function myFunction () {
+		//console.log(myQuote);
+		quoteToggle = !quoteToggle;
+		console.log(quoteToggle);
+		if (quoteToggle) {
+			myQuote.innerHTML= 'quote1';
+		} else {
+			myQuote.innerHTML= 'quote2';
+		}
+	}
+
+	// what if we have 3 quotes?
+//increment a counter by 1 with set interval
+// if (counter % 3 == 0){do something}
+
+
+
+</script>
+</body>
+</html>
