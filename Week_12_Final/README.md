@@ -16,7 +16,7 @@ My new opening quotes can switch between two different quotes every 4 seconds. I
 		myQuote= document.getElementById('myquote');
 		setInterval(myFunction, 4000);		
 	});
-	
+
 	function myFunction () {
 		//console.log(myQuote);
 		quoteToggle = !quoteToggle;
@@ -50,28 +50,27 @@ I added a button at the lower right corner on all pages that links to the top of
 5. Contact
 I made an animated timeline using GSAP TimeLineLite. The list items fade in one by one. I also added my resume to the contact page, according to the feedback I got from midterm.
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var
-			$email = $('li').eq(3),
-			$tumblr = $('li').eq(4),
-			$youtube = $('li').eq(5),
-			$weibo = $('li').eq(6),
-			$facebook = $('li').eq(7),
-			$resume = $('li').eq(8),
-			$bg = $('#page-wrap');
+	$(document).ready(function(){
+		var
+		$email = $('li').eq(3),
+		$tumblr = $('li').eq(4),
+		$youtube = $('li').eq(5),
+		$weibo = $('li').eq(6),
+		$facebook = $('li').eq(7),
+		$resume = $('li').eq(8),
+		$bg = $('#page-wrap');
 
-			var tl = new TimelineLite();
+		var tl = new TimelineLite();
 
-			tl.from($bg, 0.8, {opacity:0})
-			.from($email, 0.5, {opacity:0})
-			.from($tumblr, 0.5, {opacity:0})
-			.from($youtube, 0.5, {opacity:0})
-			.from($weibo, 0.5, {opacity:0})
-			.from($facebook, 0.5, {opacity:0})
-			.from($resume, 0.5, {opacity:0})
-		});
-	</script>
+		tl.from($bg, 0.8, {opacity:0})
+		.from($email, 0.5, {opacity:0})
+		.from($tumblr, 0.5, {opacity:0})
+		.from($youtube, 0.5, {opacity:0})
+		.from($weibo, 0.5, {opacity:0})
+		.from($facebook, 0.5, {opacity:0})
+		.from($resume, 0.5, {opacity:0})
+	});
+
 
 6. Game Download
 I used to provide a Google Drive link to my first game, but then the users would be linked to a ugly Google Drive page. I changed the href of my anchor tag so that the users are now directly linked to the download page when they click on my game title.
