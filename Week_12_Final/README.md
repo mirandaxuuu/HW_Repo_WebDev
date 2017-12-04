@@ -10,54 +10,29 @@ In my final project proposal, I said that I want to make a cover page and I also
 2. Opening quotes
 My new opening quotes can switch between two different quotes every 4 seconds. I used JavaScript and JQuery to toggle the quotes.
 
-<code>
-	var quoteToggle = true;
-	var myQuote; 
-	document.addEventListener('DOMContentLoaded', function () {
-		myQuote= document.getElementById('myquote');
-		setInterval(myFunction, 4000);		
-	});
-
-	function myFunction () {
-		//console.log(myQuote);
-		quoteToggle = !quoteToggle;
-		console.log(quoteToggle);
-		if (quoteToggle) {
-			myQuote.innerHTML= '"To send light into the darkness of men\'s hearts - such is the duty of the artist." - Robert Schumann';
-		} else {
-			myQuote.innerHTML= '"Works of art make rules; rules do not make works of art." - Claude Debussy';
-		}
-	}
-</code>
-
+<img src="img/code/quotetoggle.PNG">
 
 3. Background Music
 I added a background music for the homepage using the audio tag in HTML.
-
-<code>
 
 	<audio autoplay="" controls="" loop="" preload="">
 		<source src="audio/Departure.wav" type="audio/wav"></source>
 	</audio>
 
-</code>
 
 4. Top Button
 I added a button at the lower right corner on all pages that links to the top of the page. I used the TweenLite in GSAP to get the smooth scrolling effect.
 
-<code>
 	$(document).ready(function() {
 	    $('#gotop').click(function(){
 	        TweenLite.to(window, 0.5, {scrollTo:0});
 	    });
 	});
-</code>
 
 
 5. Contact
 I made an animated timeline using GSAP TimeLineLite. The list items fade in one by one. I also added my resume to the contact page, according to the feedback I got from midterm.
 
-<code>
 	$(document).ready(function(){
 		var
 		$email = $('li').eq(3),
@@ -78,7 +53,7 @@ I made an animated timeline using GSAP TimeLineLite. The list items fade in one 
 		.from($facebook, 0.5, {opacity:0})
 		.from($resume, 0.5, {opacity:0})
 	});
-</code>
+
 
 6. Game Download
 I used to provide a Google Drive link to my first game, but then the users would be linked to a ugly Google Drive page. I changed the href of my anchor tag so that the users are now directly linked to the download page when they click on my game title.
@@ -88,12 +63,11 @@ I used to provide a Google Drive link to my first game, but then the users would
 
 When users click on the footer under contact page, the footer would shake for 3 times. This interactivity is just for fun.
 
-<code>
 	var $myFooter = $('.interactive');
 	$myFooter.click(function(){
 		$myFooter.effect("shake", {times:3}, 1000);
 	});
-</code>
+
 
 
 Future improvement:
