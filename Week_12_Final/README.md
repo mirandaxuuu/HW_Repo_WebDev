@@ -15,45 +15,17 @@ My new opening quotes can switch between two different quotes every 4 seconds. I
 3. Background Music
 I added a background music for the homepage using the audio tag in HTML.
 
-	<audio autoplay="" controls="" loop="" preload="">
-		<source src="audio/Departure.wav" type="audio/wav"></source>
-	</audio>
-
+<img src="img/code/audio.PNG">
 
 4. Top Button
 I added a button at the lower right corner on all pages that links to the top of the page. I used the TweenLite in GSAP to get the smooth scrolling effect.
 
-	$(document).ready(function() {
-	    $('#gotop').click(function(){
-	        TweenLite.to(window, 0.5, {scrollTo:0});
-	    });
-	});
-
+<img src="img/code/top.PNG">
 
 5. Contact
 I made an animated timeline using GSAP TimeLineLite. The list items fade in one by one. I also added my resume to the contact page, according to the feedback I got from midterm.
 
-	$(document).ready(function(){
-		var
-		$email = $('li').eq(3),
-		$tumblr = $('li').eq(4),
-		$youtube = $('li').eq(5),
-		$weibo = $('li').eq(6),
-		$facebook = $('li').eq(7),
-		$resume = $('li').eq(8),
-		$bg = $('#page-wrap');
-
-		var tl = new TimelineLite();
-
-		tl.from($bg, 0.8, {opacity:0})
-		.from($email, 0.5, {opacity:0})
-		.from($tumblr, 0.5, {opacity:0})
-		.from($youtube, 0.5, {opacity:0})
-		.from($weibo, 0.5, {opacity:0})
-		.from($facebook, 0.5, {opacity:0})
-		.from($resume, 0.5, {opacity:0})
-	});
-
+<img src="img/code/fadein.PNG">
 
 6. Game Download
 I used to provide a Google Drive link to my first game, but then the users would be linked to a ugly Google Drive page. I changed the href of my anchor tag so that the users are now directly linked to the download page when they click on my game title.
@@ -63,11 +35,7 @@ I used to provide a Google Drive link to my first game, but then the users would
 
 When users click on the footer under contact page, the footer would shake for 3 times. This interactivity is just for fun.
 
-	var $myFooter = $('.interactive');
-	$myFooter.click(function(){
-		$myFooter.effect("shake", {times:3}, 1000);
-	});
-
+<img src="img/code/footer.PNG">
 
 
 Future improvement:
