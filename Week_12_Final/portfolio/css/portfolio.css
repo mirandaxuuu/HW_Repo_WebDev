@@ -1,0 +1,257 @@
+h1 {
+	display: inline-block;
+	color: rgb(50, 50, 50);
+}
+
+footer, h1{
+	padding: 0px 15px 0px 15px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: rgb(50, 50, 50);
+}
+
+/****************
+NAVIGATION
+****************/
+
+nav {
+    float: right;
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+ul.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	display: inline-block;
+	font-size: 18px;
+}
+
+li a {
+	display: block;
+	text-align: center;
+	width: 100px;
+	padding: 10px;
+	text-decoration: none;
+	color: rgb(50, 50, 50);
+	transition: all 800ms ease;
+}
+
+nav a:hover {
+    background-color: lightgray; 
+    color: black; 
+}
+
+/***************
+BODY
+***************/
+
+body {
+	width: 70%;
+	margin: 0 auto;
+	font-family: 'Muli', sans-serif;
+	color: rgb(50, 50, 50);
+	background: url(../../img/playstation-pattern.png);
+}
+
+main {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	background-color: white;
+	min-height: 700px;
+}
+
+div.container img {
+	width: 96%
+	margin: 1%;
+/*	padding-top: 20px;*/
+}
+
+div.container {
+	padding: 5px;
+	font-size: 18px;
+}
+
+.backtotop {
+	opacity: 0.5;
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	transition: all 100ms ease;
+}
+
+.backtotop:hover{
+	opacity: 1;
+}
+
+
+/**************************
+IMGS & TITLES
+**************************/
+
+.view {
+	cursor: default;
+	text-align: center;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.view a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right:0;
+	background-color: rgba(0,0,0,0.7);
+	/* this makes the contaner a flex box*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.view img {
+	display: block;
+	position: relative;
+}
+
+.view h2 {
+	/*width: ;*/
+	/*height: ;*/
+	color: white;
+	font-size: 36px;
+	/*padding: 10px;*/
+	/*margin: 100px 0 0 0;*/
+}
+
+
+
+/*******************************
+HOVER
+*******************************/
+
+
+.view img {
+	transition: all 0.2s ease-in-out;
+}
+
+.view a {
+	transition: all 300ms linear;
+	opacity: 0;
+}
+
+.view h2 {
+	color: white;
+	transition: all 600ms linear;
+	opacity: 0;
+}
+
+.view:hover img {
+	opacity: 0.5;
+}
+
+.view:hover a {
+	opacity: 1;
+}
+
+.view:hover h2,
+.view:hover p,
+.view:hover a {
+	opacity: 1;
+}
+
+
+/* my first try that did not work: */
+
+/*.polaroid {
+    position: relative;
+    margin: 10px;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(10,10,10,0.5);
+    -moz-box-shadow: 2px 2px 2px 2px rgba(10,10,10,0.5);
+    box-shadow: 2px 2px 2px 2px rgba(10,10,10,0.5);
+}
+
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    top: 34%;
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    color: rgba(255,255,255,0);
+    display: block;
+    transition: all 300ms ease;
+}
+
+.polaroid p:hover {
+	color: rgb(255,255,255);
+}*/
+
+
+
+/*********************
+FOOTER
+*********************/
+
+footer {
+	float: right;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+}
+
+
+/*******************
+MEDIA QUERIES
+*******************/
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	body {
+		width: 80%;
+	}
+
+	main {
+		padding: 10px;
+	}
+	
+	.view h2 {
+		font-size: 22px;
+	}
+
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+	body {
+		width: 85%;
+	}
+	
+	ul.menu li {
+		font-size: 12px;
+	}
+
+	.view h2 {
+		font-size: 18px;
+	}
+
+
+}

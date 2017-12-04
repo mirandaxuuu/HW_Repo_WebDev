@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio of Tonglin Xu</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<script src="https://use.fontawesome.com/40ad87cc1e.js"></script>
+</head>
+
+<body>
+	
+	<main>
+
+	<header>
+
+		<h1><a href="../about.html">Tonglin Xu</a></h1>
+
+		<nav>
+			<ul class="menu">
+				<li><a href="../about.html">About</a></li>
+				<li><a href="../portfolio/index.html">Portfolio</a></li>
+				<li><a href="index.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<hr color="lightgrey" size="1" width="90%">
+		
+	</header>
+
+	<article>
+
+		<ul class="contact">
+			<div id="page-wrap">
+				<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>    Email: tx386nyu.edu</a></li>
+				<li><a href="http://mirandaxuuu.tumblr.com/" target="_blank"><i class="fa fa-tumblr-square" aria-hidden="true"></i>    Tumblr: mirandaxuuu</a></li>
+				<li><a href="https://www.youtube.com/channel/UCpOv1n5E1fXhW40F9_ltdXw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i>    YouTube: Tonglin Xu</a></li>
+				<li><a href="https://weibo.com/3214210747/info" target="_blank"><i class="fa fa-weibo" aria-hidden="true"></i>    Weibo: RicoRicoM</a></li>
+				<li><a href="https://www.facebook.com/miranda.xu.792" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i>    Facebook: Miranda Xu</a></li>
+				<li><a href="Resume.pdf" target="_blank"><i class="fa fa-id-badge" aria-hidden="true"></i>    Resume</a></li>
+			</div>
+		</ul>
+
+	</article>
+
+	<footer>
+
+		<p class="interactive">&copy; Tonglin Xu 2017</p>
+
+	</footer>
+
+	<br class="clear">
+
+	</main>
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	  crossorigin="anonymous"></script>
+
+	<script type = "text/javascript"
+	 src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	</script>
+	<script type = "text/javascript" 
+	 src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			var
+			$email = $('li').eq(3),
+			$tumblr = $('li').eq(4),
+			$youtube = $('li').eq(5),
+			$weibo = $('li').eq(6),
+			$facebook = $('li').eq(7),
+			$resume = $('li').eq(8),
+			$bg = $('#page-wrap');
+
+			var tl = new TimelineLite();
+
+			tl.from($bg, 0.8, {opacity:0})
+			.from($email, 0.5, {opacity:0})
+			.from($tumblr, 0.5, {opacity:0})
+			.from($youtube, 0.5, {opacity:0})
+			.from($weibo, 0.5, {opacity:0})
+			.from($facebook, 0.5, {opacity:0})
+			.from($resume, 0.5, {opacity:0})
+
+			var $myFooter = $('.interactive');
+			$myFooter.click(function(){
+				$myFooter.effect("shake", {times:3}, 1000);
+			});
+
+		});
+
+
+	</script>
+
+
+
+
+</body>
+
+</html>

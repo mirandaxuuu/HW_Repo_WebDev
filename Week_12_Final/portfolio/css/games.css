@@ -1,0 +1,149 @@
+h1 {
+	display: inline-block;
+	color: rgb(50, 50, 50);
+	margin-left: 10px;
+}
+
+footer, h1{
+	padding: 0px 15px 0px 15px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: rgb(50, 50, 50);
+}
+
+/****************
+NAVIGATION
+****************/
+
+nav {
+    float: right;
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+ul.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	display: inline-block;
+	font-size: 18px;
+}
+
+li a {
+	display: block;
+	text-align: center;
+	width: 100px;
+	padding: 10px;
+	text-decoration: none;
+	color: rgb(50, 50, 50);
+	transition: all 800ms ease;
+}
+
+nav a:hover {
+    background-color: lightgray; 
+    color: black; 
+}
+
+/*********************
+BODY
+*********************/
+
+body {
+	width: 70%;
+	margin: 0 auto;
+	font-family: 'Muli', sans-serif;
+	color: rgb(50, 50, 50);
+	background: url(../../img/playstation-pattern.png);
+}
+
+main {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	background-color: white;
+	min-height: 700px;
+}
+
+/*************************
+CONTAINER
+*************************/
+.container {
+	margin: 0 auto;
+}
+
+.polaroid {
+	position: relative;
+	width: 45%;
+	display: inline-block;
+	margin: 20px;
+}
+
+.polaroid img {
+	width: 100%;
+	height: auto;
+	border: 10px solid rgb(200,200,200);
+	border-bottom:45px solid rgb(200,200,200);
+}
+
+.polaroid p {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	color: black;
+	bottom: 0px;
+	font-size: 16px;
+}
+
+/*********************
+FOOTER
+*********************/
+
+footer {
+	display: block;
+	float: right;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	display: block;
+}
+
+/*******************
+MEDIA QUERIES
+*******************/
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	body {
+		width: 80%;
+	}
+
+	main {
+		padding: 10px;
+	}
+
+
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+	body {
+		width: 85%;
+	}
+	
+	ul.menu li {
+		font-size: 12px;
+	}
+	
+	.polaroid {
+		width: 80%;
+	}
+
+}

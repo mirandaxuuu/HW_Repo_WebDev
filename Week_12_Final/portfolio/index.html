@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio of Tonglin Xu</title>
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+
+<body>
+	
+	<main>
+
+	<header>
+
+		<h1><a href="../about.html">Tonglin Xu</a></h1>
+
+		<nav>
+			<ul class="menu">
+				<li><a href="../about.html">About</a></li>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="../contact/index.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<hr color="lightgrey" size="1" width="90%">
+		
+	</header>
+	
+	<div class="container">
+
+        <div class="view">
+        	<img src="img/studio.jpg" alt="image for music category" title="music" width="100%">
+        		<a href="music.html"><h2>Music</h2></a> 
+        </div>
+
+        <div class="view">
+        	<img src="img/camera.jpg" alt="image for photography category" title="photography" width="100%">
+        		<a href="photography.html"><h2>Photography</h2></a> 
+        </div>
+
+        <div class="view">
+        	<img src="img/xbox.jpg" alt="image for games category" title="games" width="100%">
+        		<a href="games.html"><h2>Games</h2></a> 
+        </div>
+
+
+    </div>
+
+
+	<footer>
+
+		<p>&copy; Tonglin Xu 2017</p>
+
+	</footer>
+
+	<br class="clear">
+
+	</main>
+
+
+    <div class="backtotop">
+       <img id="gotop" src="../img/backtotopicon.png" width="50%" height="50%">
+    </div>
+
+
+    <script
+      src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
+      
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#gotop').click(function(){
+                TweenLite.to(window, 0.5, {scrollTo:0});
+            });
+        });
+
+    </script>
+
+
+
+</body>
+
+
+</html>
