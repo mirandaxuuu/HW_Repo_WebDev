@@ -113,6 +113,10 @@ footer {
 	height: 0;
 }
 
+p.interactive {
+	white-space: nowrap;
+}
+
 /*******************
 MEDIA QUERIES
 *******************/
